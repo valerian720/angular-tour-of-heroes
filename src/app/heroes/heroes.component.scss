@@ -6,25 +6,65 @@
   width: 15em;
 }
 
-.heroes li {
-  display: flex;
-}
-
-.heroes button {
-  flex: 1;
-  cursor: pointer;
-  position: relative;
-  left: 0;
-  background-color: #EEE;
-  margin: .5em;
-  padding: 0;
-  border-radius: 4px;
-  display: flex;
-  align-items: stretch;
-  height: 1.8em;
-}
-
 .heroes {
+  .nr {
+    display: flex;
+  }
+  .r {
+    position: relative;
+    cursor: pointer;
+  }
+  .r:hover {
+    left: .1em;
+  }
+  a {
+    color: #333;
+    text-decoration: none;
+    background-color: #EEE;
+    margin: .5em;
+    padding: .3em 0;
+    height: 1.6em;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+  }
+  a:hover {
+    color: #2c3a41;
+    background-color: #e6e6e6;
+  }
+  a:active {
+    background-color: #525252;
+    color: #fafafa;
+  }
+  .badge {
+    display: inline-block;
+    font-size: small;
+    color: white;
+    padding: 0.8em 0.7em 0 0.7em;
+    background-color: #405061;
+    line-height: 1em;
+    position: relative;
+    left: -1px;
+    top: -4px;
+    height: 1.8em;
+    min-width: 16px;
+    text-align: right;
+    margin-right: .8em;
+    border-radius: 4px 0 0 4px;
+  }
+  button {
+    flex: 1;
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    background-color: #EEE;
+    margin: .5em;
+    padding: 0;
+    border-radius: 4px;
+    display: flex;
+    align-items: stretch;
+    height: 1.8em;
+  }
   button:hover {
     color: #2c3a41;
     background-color: #e6e6e6;
@@ -46,7 +86,7 @@
     background-color: black;
     color: white;
   }
-  .badge {
+  .badge-1 {
     display: inline-block;
     font-size: small;
     color: white;
